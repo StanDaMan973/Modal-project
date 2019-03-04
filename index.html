@@ -1,37 +1,71 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Modal project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
-    
+
 </head>
+
 <body>
-   
+
     <button id="modal-btn" class="button">click here</button>
 
-<div id="simplemodal" class="modal">
-    <div class="modal-content">
-        <div class="modal-header">
-            <span class="closebtn">&times;</span>
-            <h2>modal header</h2>
-        </div>
-        <div class="modal-body">
-            <p>Hello.... I am a Modal</p>
-            <p>Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Eaque odit odio debitis illum voluptates
-                atque tenetur reprehenderit est,
-                placeat distinctio!</p>
-        </div>
-        <div class="modal-footer">
-            <h3>Modal-footer</h3>
+    <div id="simplemodal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="closebtn">&times;</span>
+                <h2>modal header</h2>
+            </div>
+            <div class="modal-body">
+                <p>Hello.... I am a Modal</p>
+                <p>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Eaque odit odio debitis illum voluptates
+                    atque tenetur reprehenderit est,
+                    placeat distinctio!</p>
+            </div>
+            <div class="modal-footer">
+                <h3>Modal-footer</h3>
+            </div>
         </div>
     </div>
-</div>
 
+    <button id="modal-btn2" class="button2">login in</button>
+
+    <!-- The Modal -->
+    <div id="simplemodal2" class="modal2">
+        <span class="closeBtn2" title="Close Modal">&times;</span>
+
+        <!-- Modal Content -->
+        <form class="modal-content2" action="/action_page.php">
+            <div class="img-container">
+                <img src="/computeravatar.jpg" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container">
+                <label for="name"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="name" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="password" required>
+
+                <button type="submit">Enter</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+
+            <div class="container">
+                <button type="button" class="cancalBTN">Cancel</button>
+                <span class="passswrd">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+    </div>
 
     <script src="modal.js"></script>
 </body>
+
 </html>

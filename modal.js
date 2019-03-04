@@ -33,3 +33,32 @@ function outsideClick(a) {
         modal.style.display = "none";
     }
 }
+
+/**** ***************************************************************** */
+
+
+var modal2 = document.getElementById("simplemodal2");
+
+var modalBtn2 = document.getElementById("modal-btn2");
+
+var closeBtn22 = document.getElementsByClassName("closeBtn2")[0];
+
+modalBtn2.addEventListener("click", openModal2);
+
+
+function openModal2() {
+    modal2.style.display = "block";
+}
+closeBtn22.addEventListener("click", closeModal);
+
+function closeModal() {
+    modal2.style.display = "none";
+}
+
+window.addEventListener("click", outsideClick2);
+
+function outsideClick2(a) {
+    if (a.target == modal2) {
+        modal2.style.display = "none";
+    }
+}
